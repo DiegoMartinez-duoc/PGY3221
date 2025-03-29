@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SayThread</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <!-- Estilo bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav>
+            <div class="titulo">
+                <img id="logo-imagen" src="img/threadIcon.png"/>
+                <h1>Say<br>
+                    Thread</h1>
+            </div>
+            <div class="centro-nav">
+                <input type="text" class="buscador" required>
+            </div>
+            <div class="right-nav">
+                <a href="registro.html" id ="registro"><button class = "registro">Registrarse</button></a>
+                <a href="inicio.html" id = "inicio"><button class = "inicio">Iniciar sesión</button></a>
+                <div id = "perfil" style="display: none;">
+                    <img class = "imagen" src="img/fotoperfil.png" draggable="false">
+                    <h7 id = "nombre-usuario">Nombre usuario</h7>
+                </div>
+                <button type="click" id="cerrar-sesion" style="display: none;">Cerrar sesion</button>
+            </div>
+            
+        </nav>
+
+
+
+        <div id = "juegos" data-mouse-down-at="0" data-prev-percentage="-50">
+            <img class = "imagen" src="img/gato.gif" draggable="false" data-url="rol.html">
+            <img class = "imagen" src="img/perro.gif" draggable="false" data-url="accion.html">
+            <img class = "imagen" src="img/duoc.png" draggable="false" data-url="estrategia.html">
+            <img class = "imagen" src="img/coding.gif" draggable="false" data-url="carreras.html">
+            <img class = "imagen" src="img/saul.gif" draggable="false" data-url="plataformas.html">
+
+            
+        </div>
+
+        <div>
+            <button id = "nombre-juego">Hilo DuocUC</button>
+        </div>
+
+        <div id = "otros-juegos">
+
+            
+            
+            <h1>Hilos recomendados</h1>
+
+            <div class="contenedor-hilos">
+            
+                <div class = "caja-hilo" id = "caja-juego-1">
+                    <h3 class>Balatro</h3>
+                    <img class = "imagen" src="img/balatro-jimbo.gif" draggable="false">
+                    <h5 class = "resumen">
+                        Dime hilo... ¿Qué vuelve a balatro el mejor juego de la historia?</h5>
+                    
+
+                    <h4 id = "cantidad-usuarios">356 participantes</h4>
+                    <h4 id = "cantidad-en-linea">300 en linea</h4>
+
+                    <button class = "boton-foro" data-url="balatro.html">Ir al hilo</button>
+                    <button class="boton-like">
+                        <img src="img/like.png" alt="Like" class="icono">
+                    </button>
+                    <h6 id = "cantidad-like"><span id="cantidad">356</span></h6>
+                    
+                </div>
+
+                <div class = "caja-hilo" id = "caja-juego-1">
+                    <h3 class>Gatos</h3>
+                    <img class = "imagen" src="img/gato.gif" draggable="false">
+                    <h5 class = "resumen">
+                        Dime hilo... ¿Por que los gatos son lo mejor del mundo?</h5>
+                    
+
+                    <h4 id = "cantidad-usuarios">100 participantes</h4>
+                    <h4 id = "cantidad-en-linea">30 en linea</h4>
+
+                    <button class = "boton-foro" data-url="gatos.html">Ir al hilo</button>
+                    <button class="boton-like">
+                        <img src="img/like.png" alt="Like" class="icono">
+                    </button>
+                    <h6 id = "cantidad-like"><span id="cantidad">500</span></h6>
+                    
+                </div>
+
+                <div class = "caja-hilo" id = "caja-juego-1">
+                    <h3 class>Perros</h3>
+                    <img class = "imagen" src="img/perro.gif" draggable="false">
+                    <h5 class = "resumen">
+                        Dime hilo... ¿Por que los perros son mejores que los gatos?</h5>
+                    
+
+                    <h4 id = "cantidad-usuarios">99 participantes</h4>
+                    <h4 id = "cantidad-en-linea">6 en linea</h4>
+
+                    <button class = "boton-foro" data-url="perros.html">Ir al hilo</button>
+                    <button class="boton-like">
+                        <img src="img/like.png" alt="Like" class="icono">
+                    </button>
+                    <h6 id = "cantidad-like"><span id="cantidad">498</span></h6>
+                    
+                </div>
+            </div>
+
+            <div class="contenedor-hilos">
+            
+                <div class = "caja-hilo" id = "caja-juego-2">
+                    <h3 class>Random</h3>
+                    <img class = "imagen" src="img/saul.gif" draggable="false">
+                    <h5 class = "resumen">
+                        Dime hilo... ¿Por que hay tantos memes de saul?</h5>
+                    
+
+                    <h4 id = "cantidad-usuarios">999 participantes</h4>
+                    <h4 id = "cantidad-en-linea">999 en linea</h4>
+
+                    <button class = "boton-foro" data-url="random.html">Ir al hilo</button>
+                    <button class="boton-like">
+                        <img src="img/like.png" alt="Like" class="icono">
+                    </button>
+                    <h6 id = "cantidad-like"><span id="cantidad">99999</span></h6>
+                    
+                </div>
+
+                <div class = "caja-hilo" id = "caja-juego-2">
+                    <h3 class>DuocUC</h3>
+                    <img class = "imagen" src="img/duoc.png" draggable="false">
+                    <h5 class = "resumen">
+                        Dime hilo... ¿Cual es el mejor curso impartido en DuocUC?</h5>
+                    
+
+                    <h4 id = "cantidad-usuarios">10 participantes</h4>
+                    <h4 id = "cantidad-en-linea">1 en linea</h4>
+
+                    <button class = "boton-foro" data-url="duoc.html">Ir al hilo</button>
+                    <button class="boton-like">
+                        <img src="img/like.png" alt="Like" class="icono">
+                    </button>
+                    <h6 id = "cantidad-like"><span id="cantidad">2</span></h6>
+                    
+                </div>
+
+                <div class = "caja-hilo" id = "caja-juego-2">
+                    <h3 class>Programadores</h3>
+                    <img class = "imagen" src="img/coding.gif" draggable="false">
+                    <h5 class = "resumen">
+                        Dime hilo... ¿Cual es el mejor lenguaje de programacion?</h5>
+                    <h4 id = "cantidad-usuarios">200 participantes</h4>
+                    <h4 id = "cantidad-en-linea">10 en linea</h4>
+
+                    <button class = "boton-foro" data-url="programacion.html">Ir al hilo</button>
+                    <button class="boton-like">
+                        <img src="img/like.png" alt="Like" class="icono">
+                    </button>
+                    <h6 id = "cantidad-like"><span id="cantidad">55</span></h6>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <h5>SayThread &copy; 2025</h5>
+                <p>Contacto:</p>
+                <p class="mb-1"><strong>Teléfono:</strong> +56 9 8234 8927</p>
+                <p><strong>Correo:</strong> <a href="mailto:noexiste@duocuc.cl" class="text-white text-decoration-none">noexiste@duocuc.cl</a></p>
+            </div>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>

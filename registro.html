@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SayThread</title>
+        <link rel="stylesheet" type="text/css" href="css/page.css"/>
+    </head>
+    <body>
+       
+        <div class="wrapper">
+            <div class="titulo">
+                <img id="logo-imagen" src="img/threadIcon.png"/>
+                <h1>Say<br>
+                    Thread</h1>
+            </div>
+
+            <!-- <a href="index.html"><button class = "inicio">Volver a inicio</button></a> -->
+
+            <h2 class="text-center">Crea una cuenta de SayThread</h2>
+            <form id="registro-formulario" class="validacion" novalidate>
+                <div class="primera-linea">
+                    <input type="text" class="formulario" id="nombre-input" placeholder="Nombre" required>
+                </div>
+                <div class="segunda-linea">
+                    <input type="text" class="formulario" id="nombre-usuario-input" placeholder="Nombre de Usuario" required>
+                    <input type="email" class="formulario" id="email-input" placeholder="Correo Electrónico" required>
+                </div>
+                <div class="tercera-linea">
+                    <input type="password" class="formulario" id="contrasena-input" placeholder="Contraseña" required>
+                    <input type="password" class="formulario" id="confirmar-contrasena-input" placeholder="Repetir Contraseña" required>
+                </div>
+                <div class="cuarta-linea">
+                    <input type="date" class="formulario" id="fecha-input" placeholder="Fecha de Nacimiento" required>
+                </div>
+                <div class ="boton">
+                    <button type="submit" class="registrar">Registrar</button>
+                </div>
+            </form>
+
+            <h7 class ="ir-registro">¿Ya tienes una cuenta? Inicia sesión <span id = "ir-registro">aqui</span></h7>
+        </div>
+        
+        <script src="js/registro.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
